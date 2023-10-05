@@ -1,5 +1,5 @@
 import React from "react";
-import { buttons } from "../utils/constants";
+import { buttons } from "../utils/helper";
 import Button from "./Button";
 
 const ButtonsList = () => {
