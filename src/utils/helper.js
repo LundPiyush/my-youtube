@@ -205,44 +205,44 @@ export function getRandomSentence() {
 export const commentsData = [
   {
     _id: uuid(),
-    name: "Akshay Saini",
+    name: "Piyush Lund",
     text: "Lorem ipsum dolor sit amet, consectetur adip",
     replies: [],
   },
   {
     _id: uuid(),
-    name: "Akshay Saini",
+    name: "Piyush Lund",
     text: "Lorem ipsum dolor sit amet, consectetur adip",
     replies: [
       {
         _id: uuid(),
-        name: "Akshay Saini",
+        name: "Piyush Lund",
         text: "Lorem ipsum dolor sit amet, consectetur adip",
         replies: [],
       },
       {
         _id: uuid(),
-        name: "Akshay Saini",
+        name: "Piyush Lund",
         text: "Lorem ipsum dolor sit amet, consectetur adip",
         replies: [
           {
             _id: uuid(),
-            name: "Akshay Saini",
+            name: "Piyush Lund",
             text: "Lorem ipsum dolor sit amet, consectetur adip",
             replies: [
               {
                 _id: uuid(),
-                name: "Akshay Saini",
+                name: "Piyush Lund",
                 text: "Lorem ipsum dolor sit amet, consectetur adip",
                 replies: [
                   {
                     _id: uuid(),
-                    name: "Akshay Saini",
+                    name: "Piyush Lund",
                     text: "Lorem ipsum dolor sit amet, consectetur adip",
                     replies: [
                       {
                         _id: uuid(),
-                        name: "Akshay Saini",
+                        name: "Piyush Lund",
                         text: "Lorem ipsum dolor sit amet, consectetur adip",
                         replies: [],
                       },
@@ -250,7 +250,7 @@ export const commentsData = [
                   },
                   {
                     _id: uuid(),
-                    name: "Akshay Saini",
+                    name: "Piyush Lund",
                     text: "Lorem ipsum dolor sit amet, consectetur adip",
                     replies: [],
                   },
@@ -264,25 +264,25 @@ export const commentsData = [
   },
   {
     _id: uuid(),
-    name: "Akshay Saini",
+    name: "Piyush Lund",
     text: "Lorem ipsum dolor sit amet, consectetur adip",
     replies: [],
   },
   {
     _id: uuid(),
-    name: "Akshay Saini",
+    name: "Piyush Lund",
     text: "Lorem ipsum dolor sit amet, consectetur adip",
     replies: [],
   },
   {
     _id: uuid(),
-    name: "Akshay Saini",
+    name: "Piyush Lund",
     text: "Lorem ipsum dolor sit amet, consectetur adip",
     replies: [],
   },
   {
     _id: uuid(),
-    name: "Akshay Saini",
+    name: "Piyush Lund",
     text: "Lorem ipsum dolor sit amet, consectetur adip",
     replies: [],
   },
