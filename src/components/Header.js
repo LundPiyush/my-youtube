@@ -45,13 +45,13 @@ const Header = () => {
       <div className="flex col-span-1">
         <img
           onClick={toggleMenuHandler}
-          className="h-8 cursor-pointer"
+          className="h-8 cursor-pointer mt-3"
           alt="hamburger-menu"
           src="https://cdn.iconscout.com/icon/free/png-256/free-hamburger-menu-462145.png?f=webp"
         />
         <a href="/">
           <img
-            className="h-10 hover:cursor-pointer"
+            className="h-14 hover:cursor-pointer "
             alt="youtube-logo"
             src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500"
           />
@@ -72,7 +72,7 @@ const Header = () => {
             🔍
           </button>
         </div>
-        {showSuggestions && (
+        {showSuggestions && suggestions.length > 0 && (
           <div className="fixed bg-white py-2 px-2 shadow-lg rounded-lg border border-gray-100 w-1/3 ml-[18%]">
             <ul>
               {suggestions.map((s) => (
@@ -88,7 +88,7 @@ const Header = () => {
       </div>
       <div className="col-span-1">
         <img
-          className="h-8"
+          className="h-8 mt-2"
           alt="user-icon"
           src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png"
         />

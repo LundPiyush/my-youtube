@@ -18,7 +18,7 @@ const LiveChat = () => {
           message: getRandomSentence(),
         })
       );
-    }, 2000); // fetch chat data after every 2 seconds
+    }, 1500); // fetch chat data after every 2 seconds
     return () => clearInterval(chatInterval);
     // eslint-disable-next-line
   }, []);
