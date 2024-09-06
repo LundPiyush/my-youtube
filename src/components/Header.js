@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
 import { YOUTUBE_SEARCH_API } from "../utils/constants";
 import { cacheResults } from "../utils/searchSlice";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -10,6 +11,8 @@ const Header = () => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const dispatch = useDispatch();
   const searchCache = useSelector((store) => store.search);
+  const navigate = useNavigate();
+
   useEffect(() => {
     const timer = setTimeout(() => {
       if (searchCache[searchQuery]) {
@@ -34,7 +37,7 @@ const Header = () => {
         [searchQuery]: json[1],
       })
     );
-    console.log(json[1]);
+    //console.log(json[1]);
   };
 
   const toggleMenuHandler = () => {
@@ -79,7 +82,9 @@ const Header = () => {
                 <li
                   key={s}
                   className="py-2 px-3 shadow-sm hover:bg-gray-100 text-left">
-                  🔍 {s}
+                  <Link to={`/search?q=` + s} className="block w-[100%]">
+                    {s}
+                  </Link>
                 </li>
               ))}
             </ul>

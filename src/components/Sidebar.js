@@ -5,30 +5,45 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
   if (!isMenuOpen) return null; //Early return
-
+  const IconsList = [
+    {
+      name: "Home",
+    },
+    {
+      name: "Shorts",
+    },
+    {
+      name: "Feedback",
+    },
+    {
+      name: "Videos",
+    },
+    {
+      name: "Live",
+    },
+    {
+      name: "Movies",
+    },
+    {
+      name: "Sports",
+    },
+    {
+      name: "Music",
+    },
+    {
+      name: "Gaming",
+    },
+  ];
   return (
     <div className="w-48 shadow p-5">
       <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>Shorts</li>
-        <li>Videos</li>
-        <li>Live</li>
-      </ul>
-      <h1 className="font-bold pt-5">Subcriptions</h1>
-      <ul>
-        <li>Movies</li>
-        <li>Sports</li>
-        <li>Music</li>
-        <li>Gaming</li>
-      </ul>
-      <h1 className="font-bold pt-5">Watch later</h1>
-      <ul>
-        <li>Movies</li>
-        <li>Sports</li>
-        <li>Gaming</li>
-        <li>Music</li>
+        {IconsList?.map((icon) => (
+          <li key={icon.name}>
+            <Link to={icon.name === "Home" ? "" : `search?q=${icon.name}`}>
+              {icon.name}
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );
